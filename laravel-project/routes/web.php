@@ -15,13 +15,9 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-Route::get('/home', [PagesController::class, 'Home'])->name('Home');
+Route::get('/', [PagesController::class, 'Home'])->name('Home');
 Route::get('/about', [PagesController::class, 'About'])->name('About');
 Route::post('/about', [PagesController::class, 'About'])->name('About');
 
 Auth::routes();
-
-Route::get('/login', [App\Http\Controllers\HomeController::class, 'index'])->name('Login');
-Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
