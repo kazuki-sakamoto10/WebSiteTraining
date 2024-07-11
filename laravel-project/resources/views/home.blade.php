@@ -8,6 +8,9 @@
                 <div class="card-header">
                     <a href="{{ route('about') }}">投稿画面へ</a>
                 </div>
+                <div class="card-header">
+                    <a href="{{ route('contact') }}">一覧画面へ</a>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))

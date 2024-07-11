@@ -24,4 +24,17 @@ class PagesController extends Controller
       $post ->save();
       return view('home');
     }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function contact()
+    {
+      $post = Post::all();
+        return view('contact', [
+            'posts' => $post,
+        ]);
+    }
 }
