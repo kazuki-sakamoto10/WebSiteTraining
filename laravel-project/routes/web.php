@@ -16,7 +16,7 @@ use App\Http\Controllers\PagesController;
 */
 
 Route::get('/about', [PagesController::class, 'about'])->name('about');
-Route::post('/about', [PagesController::class, 'store'])->name('about.store');
+Route::post('/about', [PagesController::class, 'store'])->name('store');
 
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

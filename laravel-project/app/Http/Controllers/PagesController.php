@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post as ModelsPost;
+use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\User;
-use App\Post;
 
 class PagesController extends Controller
 {
@@ -25,5 +24,4 @@ class PagesController extends Controller
       $post ->save();
       return view('home');
     }
-
 }
