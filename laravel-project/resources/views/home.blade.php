@@ -18,8 +18,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('こんにちは') }}
                 </div>
             </div>
         </div>
